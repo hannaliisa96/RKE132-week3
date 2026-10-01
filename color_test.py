@@ -1,3 +1,4 @@
+from colorama import Fore, Style
 #Kirjuta programm, mis küsib kasutajalt tema lemmikvärvi ja väljastab selle põhjal tema temperamendi.
 
 #lilla --> armas
@@ -19,20 +20,17 @@ elif color == "must":
 else:
     print("Oled unikaalne") """
 
-""" match color:
+match color:
     case "lilla":
-        print("Oled armas")
+        print(Fore.MAGENTA + "Oled armas" + Style.RESET_ALL)
     case "roosa":
-        print("Oled sõbralik")
+        print(Fore.PINK + "Oled sõbralik" + Style.RESET_ALL)
     case "sinine":
-        print("Oled rahulik")
+        print(Fore.BLUE + "Oled rahulik" + Style.RESET_ALL)
     case "must":
-        print("Oled salapärane")
+        print(Fore.BLACK + "Oled salapärane" + Style.RESET_ALL  )
     case _:
-        print("Oled unikaalne") """
+        print(Fore.WHITE + "Oled unikaalne" + Style.RESET_ALL)
 
 
 
-""" $ pip install colorama
-bash: /c/Users/hanna/python_projects/week_3/.venv/Scripts/pip: Permission denied
-(.venv)  """
